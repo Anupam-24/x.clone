@@ -1,20 +1,621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="black">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/X</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="shortcut icon" href="./icon/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 
 </head>
-<body>
-   <aside>
 
-   </aside>
-   <main>
+<body class="bg-black">
+    <div class="container mx-auto max-w-[1250px] flex ">
+        <div class="home lg:w-[21%] sticky top-0 mt-1">
+            <div class="sticky top-0">
+                <ul class="text-white text-[20px] font-medium flex flex-col">
+                    <li class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit p-[10px] gap-6"><i
+                            class="fa-brands text-[30px] fa-x-twitter"></i></li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-solid text-[22px] fa-house"></i>
+                        <p class="hidden lg:block">Home</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-solid text-[22px] fa-magnifying-glass"></i>
+                        <p class="hidden lg:block">Explore</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-regular text-[22px] fa-bell"></i>
+                        <p class="hidden lg:block">Notifications</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-regular text-[22px] fa-envelope"></i>
+                        <p class="hidden lg:block">Messages</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-solid text-[22px] fa-list"></i>
+                        <p class="hidden lg:block">Lists</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-regular text-[22px] fa-bookmark"></i>
+                        <p class="hidden lg:block">Bookmarks</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-solid text-[22px] fa-user-group"></i>
+                        <p class="hidden lg:block">Communites</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-brands text-[22px] fa-x-twitter"></i>
+                        <p class="hidden lg:block">Premium</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-regular text-[22px] fa-user"></i>
+                        <p class="hidden lg:block">Profile</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                        <i class="fa-solid text-[22px] fa-ellipsis"></i>
+                        <p class="hidden lg:block">More</p>
+                    </li>
+                    <li
+                        class="flex items-center rounded-full hover:bg-slate-900 cursor-pointer w-fit md:py-[10px] md:pl-[12px] md:pr-[30px] p-[10px] gap-6">
+                    </li>
+                    <button class="bg-blue-400 hidden lg:block rounded-full py-3 -mt-2 mr-8 text-[18px font-bold">Post</button>
+                </ul>
+                <div
+                    class="text-white hidden sticky bottom-0 lg:flex gap-4 font-normal items-center rounded-full hover:bg-slate-900 pt-2 mr-20 mt-8 px-2 w-full">
+                    <div class="w-12">
+                        <img class="rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1432381458052640778/GygeaEiE_x96.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h2>
+                            Anupam Roy
+                        </h2>
+                        <p class="text-slate-600">
+                            @Anupamr24118930
+                        </p>
 
-   </main>
-   
+                    </div>
+                    <div>
+                        <i class="fa-solid text-[22px] fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main lg:w-[50%] border-x-[.5px] border-opacity-30 border-slate-100">
+            <div class=" sticky top-0 bg-black">
+                <div class="top flex font-bold justify-between items-center text-white">
+                    <div class="relative flex justify-center py-[14px] hover:bg-slate-900 w-1/2">
+                        For you
+                        <div class="absolute w-14 rounded-full bottom-0 h-1 bg-blue-500"></div>
+                    </div>
+                    <div class="flex text-slate-600 justify-around py-[14px] hover:bg-slate-900  items-center w-1/2">
+                        Following
+                    </div>
+                    <div class=" rounded-full">
+                        <i class="fa-solid p-[14px] rounded-full fa-gear hover:bg-slate-900"></i>
+                    </div>
+                </div>
+                <hr class="w-full h-[1px] opacity-50">
+
+            </div>
+            <div class="whatsHappenig flex flex-col">
+                <div class="flex gap-4 mx-4 my-4">
+                    <img class="w-10 rounded-full"
+                        src="https://pbs.twimg.com/profile_images/1432381458052640778/GygeaEiE_x96.jpg" alt="">
+
+                    <input class="text-white outline-none text-xl bg-transparent" type="text"
+                        placeholder="What is happening?!">
+                </div>
+                <div class="ml-16">
+                    <div
+                        class="text-[#1d9bf0] hover:cursor-pointer text-[14px] font-bold px-2 py-[3px] hover:bg-slate-800 rounded-full w-fit flex items-center gap-2">
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <p>
+                            Everyone can reply
+                        </p>
+                    </div>
+                    <hr class="my-4 opacity-50 mr-4 w-70% h-[1px]">
+                    <div class="flex justify-between items-center ml-2 mr-6">
+                        <div class="text-[#1d9bf0] flex gap-4">
+                            <i class="fa-regular hover:cursor-pointer fa-image"></i>
+                            <i class="fa-solid hover:cursor-pointer fa-wand-magic-sparkles"></i>
+                            <i class="fa-solid hover:cursor-pointer fa-square-poll-vertical"></i>
+                            <i class="fa-regular hover:cursor-pointer fa-face-smile"></i>
+                            <i class="fa-solid hover:cursor-pointer fa-calendar-days"></i>
+                            <i class="fa-solid hover:cursor-pointer fa-location-dot"></i>
+
+                        </div>
+                        <button
+                            class="px-4 opacity-65 text-white font-bold  py-2 rounded-full bg-blue-400 ">Post</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-[2px] opacity-50 mt-2">
+
+            <div class="text-[#1d9bf0] text-center py-3 hover:cursor-pointer hover:bg-slate-950">
+                Show 35 posts
+            </div>
+            <hr class="w-full h-[1px] opacity-50">
+
+            <!-- post 1 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-12"
+                            src="https://pbs.twimg.com/profile_images/1559375475557818368/ub-ZdXDD_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">Chennai Super Kings</h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@ChennaiIPL</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">3h</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p>
+                            How it started ➡️ How it's going 🦁💛
+                        </p>
+
+                    </div>
+                </div>
+                <div>
+                    <img class="postbody p-2 md:ml-10 ml-0 h-[60vh] rounded-xl mt-4"
+                        src="https://pbs.twimg.com/media/GEnE7vnawAAVm0D?format=jpg&name=medium" alt="">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>5k</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i>67k</div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>160k</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>19M</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-1 opacity-50">
+
+            <!-- post 2 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-12"
+                            src="https://pbs.twimg.com/profile_images/1612140675281346560/hVN2MKFv_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between ">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">𝕸𝖔𝖍𝖆𝖒𝖒𝖆𝖉 𝖘𝖍𝖆𝖒𝖎</h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@MdShami11</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">13h</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p>
+                            This award of recognition is a reminder that diligent work
+                            pays off. Thank you for this!
+                        </p>
+                        <div class="flex items-center gap-2 mt-4 text-[#1d9bf0]">
+                            <p class="hover:underline">#shami</p>
+                            <p class="hover:underline"> #mdshami</p>
+                            <p class="hover:underline">#mdshami11 </p>
+                            <p class="hover:underline">#award</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="postbody p-2 md:ml-10 ml-0 h-[60vh] bg-top bg-fixed rounded-xl bg-[url('https://pbs.twimg.com/media/GElDFtCbAAE3Mwa?format=jpg&name=large')]">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>141</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i>637</div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>16k</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>194k</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-1 opacity-50">
+            <!-- post 3 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-12"
+                            src="https://pbs.twimg.com/profile_images/1559412904327147520/CLVIDAnG_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between ">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">Shreyas Iyer
+                                </h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@ShreyasIyer15</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">3h</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p class="mb-4">
+                            Wonderful night, thankful for the recognition. Back to work now 🙏🇮🇳
+                        </p>
+
+                    </div>
+                </div>
+                <div
+                    class="postbody p-2 md:ml-10 ml-0 h-[60vh] bg-fixed bg-center rounded-xl bg-[url('https://pbs.twimg.com/media/GEipueYWoAEu4Vo?format=jpg&name=large')]">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>441</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i>447</div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>34k</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>334k</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="w-full h-1 opacity-50">
+            <!-- post 4 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-16"
+                            src="https://pbs.twimg.com/profile_images/1745768555692601344/f6WgGZHg_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between ">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">ICC Cricket World Cup</h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@cricketworldcup</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">16h</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p>
+                            With four points in the bag, England and New Zealand advance to the next stage of <span
+                                class="text-blue-800 hover:underline">#U19WorldCup</span> 2024 👏 </p>
+
+                    </div>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <img class="postbody p-2 md:ml-10 ml-0 h-[60vh] rounded-xl"
+                        src="https://pbs.twimg.com/media/GEksyo0W4AA5x2f?format=jpg&name=large" alt="">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>41</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i>67</div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>1.4k</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>19k</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-1 opacity-50">
+            <!-- post 5 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-12"
+                            src="https://pbs.twimg.com/profile_images/1574356641222623233/8jVWalGo_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">Bangladesh Cricket</h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@BCBtigers</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">Jan22</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p>
+                            ICC U19 World Cup 2024 <br> <br>
+                            Bangladesh U19 Vs Ireland U19 <br> <br>
+
+                            Player of the Match: <br>
+                            Shihab James | 55* (54) Runs <br> <br>
+
+                            Photo Credit: Getty Images <br>
+
+
+                        </p>
+                        <div class="flex items-center gap-2 mt-4 text-[#1d9bf0]">
+                            <p class="hover:underline">#BCB</p>
+                            <p class="hover:underline"> #Cricket</p>
+                            <p class="hover:underline">#U19WorldCup</p>
+                            <p class="hover:underline">#ICC</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-center">
+                    <img class="postbody p-2 md:ml-10 ml-0 h-[60vh] bg-top rounded-xl"
+                        src="https://pbs.twimg.com/media/GEdVX07bkAAA4H4?format=jpg&name=medium" alt="">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>7</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i>2</div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>180</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>7.1kk</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-1 opacity-50">
+            <!-- post 6 -->
+            <div class="post p-4">
+                <div class="posthead flex gap-2">
+                    <div>
+                        <img class="rounded-full w-12"
+                            src="https://pbs.twimg.com/profile_images/1623230060055629825/IxI18R8Y_bigger.jpg" alt="">
+                    </div>
+                    <div class="text-white flex flex-col">
+                        <div class="flex justify-between ">
+                            <div class="flex gap-1 items-center">
+                                <h1 class="hover:underline font-bold">Programming Hero</h1>
+                                <i class="fa-solid fa-circle-check text-[#1d9bf0]"></i>
+                                <p class="text-gray-500">@Programming Hero</p>
+                                <p class="text-gray-500">.</p>
+                                <p class="text-gray-500">Dec 19,2023</p>
+                            </div>
+                            <i class="fa-solid text-gray-500 fa-ellipsis"></i>
+
+                        </div>
+                        <p>
+                            This award of recognition is a reminder that diligent work
+                            pays off. Thank you for this!
+                        </p>
+
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <img class="postbody p-2 md:ml-10 ml-0 h-[60vh] bg-top rounded-xl"
+                        src="https://pbs.twimg.com/media/GBtycNbbEAADKF-?format=jpg&name=small" alt="">
+
+                </div>
+                <div class="postfooter text-white items-center flex justify-between ml-10 my-3 mr-2">
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-comment hover:cursor-pointer"></i>1</div>
+                    <div class="flex hover:text-green-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-retweet hover:cursor-pointer"></i></div>
+                    <div class="flex hover:text-red-600 duration-500 gap-2 items-center"><i
+                            class="fa-regular fa-heart hover:cursor-pointer"></i>5</div>
+                    <div class="flex hover:text-blue-500 duration-500 gap-2 items-center"><i
+                            class="fa-solid fa-chart-simple hover:cursor-pointer"></i>112</div>
+                    <div class="flex  duration-500 gap-4"><i
+                            class="hover:text-blue-500 hover:cursor-pointer duration-500 fa-regular fa-bookmark"></i><i
+                            class="fa-solid hover:text-blue-500 duration-500 hover:cursor-pointer fa-download"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-1 opacity-50">
+            <div class="flex justify-center my-10">
+                <span class="loading w-10 loading-spinner text-primary"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- right-side portion -->
+        <div class="side sticky hidden lg:block top-0 lg:w-[29%] w-0">
+            <div class="main sticky top-0 ml-8 mt-[4px]">
+                <div class="head flex gap-4 py-3 px-6 sticky top-0 items-center rounded-full bg-[#202327]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="bg-transparent outline-none" name="search" placeholder="Search" id="">
+                </div>
+                <div class="subscribe flex flex-col bg-[#202327] p-4 gap-4 text-white mt-4 rounded-2xl">
+                    <h1 class="font-bold text-2xl">Subscribe to Premium</h1>
+                    <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <button class="px-6 font-bold bg-blue-400 rounded-full py-3">Subscribe</button>
+                </div>
+                <div class="trend bg-[#202327] mt-4 rounded-2xl">
+                    <h1 class="font-bold text-white p-4 text-2xl">Trends For You</h1>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4">
+                        <div class="flex justify-between items-center text-[14px]">Trending in Bangladesh<i
+                                class="fa-solid fa-ellipsis text-[16px]"></i></div>
+                        <h2 class="text-white font-bold">#viralvideo</h2>
+                        <p>11.1k post</p>
+                    </div>
+                    <div class="hover:bg-slate-900 p-4 text-blue-500 rounded-bl-2xl">
+                        Show More
+                    </div>
+                </div>
+                <div class="bg-[#202327] mt-4 rounded-2xl">
+                    <h2 class="text-white font-bold text-2xl p-4">
+                        Who To Follow
+                    </h2>
+                    <div class="p-4 hover:cursor-pointer hover:bg-gray-900">
+                        <div class="flex w-full gap-4">
+                            <img class="rounded-full w-12 h-12"
+                                src="	https://pbs.twimg.com/profile_images/1240617174584020995/Bdo721ub_x96.jpg" alt="">
+                            <div class="flex gap-12">
+                                <div class="flex flex-col">
+                                    <h1 class="flex items-center
+                                    ">Wassim jaffer<i class="fa-solid text-blue-600 fa-circle-check"></i></h1>
+                                    <p>@WasimJffer14</p>
+                                </div>
+                                <button class="px-2 py-1 bg-white rounded-full text-black">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 hover:cursor-pointer hover:bg-gray-900">
+                        <div class="flex w-full gap-4">
+                            <img class="rounded-full w-12 h-12"
+                                src="	https://pbs.twimg.com/profile_images/1240617174584020995/Bdo721ub_x96.jpg" alt="">
+                            <div class="flex gap-12">
+                                <div class="flex flex-col">
+                                    <h1 class="flex items-center
+                                    ">Wassim jaffer<i class="fa-solid text-blue-600 fa-circle-check"></i></h1>
+                                    <p>@WasimJffer14</p>
+                                </div>
+                                <button class="px-2 py-1 bg-white rounded-full text-black">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 hover:cursor-pointer hover:bg-gray-900">
+                        <div class="flex w-full gap-4">
+                            <img class="rounded-full w-12 h-12"
+                                src="	https://pbs.twimg.com/profile_images/1240617174584020995/Bdo721ub_x96.jpg" alt="">
+                            <div class="flex gap-12">
+                                <div class="flex flex-col">
+                                    <h1 class="flex items-center
+                                    ">Wassim jaffer<i class="fa-solid text-blue-600 fa-circle-check"></i></h1>
+                                    <p>@WasimJffer14</p>
+                                </div>
+                                <button class="px-2 py-1 bg-white rounded-full text-black">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="hover:bg-slate-900 p-4 text-blue-500 rounded-bl-2xl">
+                        Show More
+                    </div>
+                </div>
+                <div class="footer sticky bottom-0 text-[12px] flex flex-col gap-1 p-4">
+                    <div class="flex">
+                        <span class="hover:underline">Term of services</span> <span class="hover:underline">Privecy
+                            Policy</span> <span class="hover:underline">Cookie Policy</span>
+
+                    </div>
+                    <div class="flex">
+                        <span class="hover:underline">Accesibility</span> <span class="hover:underline">Add Info</span>
+                        <span class="hover:underline">More...</span> <span>
+                            © 2024 X Corp.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
